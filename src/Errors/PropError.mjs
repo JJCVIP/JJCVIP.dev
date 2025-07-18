@@ -10,9 +10,9 @@
 export default class PropError extends Error{
     constructor(message){
         super(message)
-        
+
         if (Error.captureStackTrace) {
-            Error.captureStackTrace(this, CustomError);
+            Error.captureStackTrace(this, PropError);
         }
     }
 
