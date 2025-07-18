@@ -36,7 +36,7 @@ export default function Button(props){
     }finally{
         return(
             <div id={props.name+"_id"}>
-                <h2>{props.text}</h2>
+                <h2 onclick={props.function(props.functionParams)}>{props.text}</h2>
             </div>
     );
     }
